@@ -9,6 +9,7 @@ import { SearchComponent } from './components/search/search.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 
 const routes: Routes = [
+  { path: '', component: WelcomeComponent},
   { path: 'welcome', component: WelcomeComponent},
   { path: 'search', component: SearchComponent},
   { path: 'movies/create', component: CreateMovieComponent}, 

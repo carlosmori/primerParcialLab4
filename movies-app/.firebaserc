@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "movies-c6c0f": {
+      "hosting": {
+        "movies-app": [
+          "movies-c6c0f"
+        ]
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
@@ -10,6 +12,7 @@ import { ActorListComponent } from './components/actor-list/actor-list.component
 import { MoviesListComponent } from './components/movies-list/movies-list.component';
 import { CreateMovieComponent } from './components/create-movie/create-movie.component';
 import { ErrorComponent } from './components/error/error.component';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ErrorComponent } from './components/error/error.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
