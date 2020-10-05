@@ -15,6 +15,8 @@ import { ErrorComponent } from './components/error/error.component';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from '../angular-material/angular-material.module';
+import { MovieTableComponent } from './components/movie-table/movie-table.component';
+import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { AngularMaterialModule } from '../angular-material/angular-material.modu
     ActorListComponent,
     MoviesListComponent,
     CreateMovieComponent,
-    ErrorComponent
+    ErrorComponent,
+    MovieTableComponent,
+    MovieDetailComponent
   ],
   imports: [
     BrowserModule,
